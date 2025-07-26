@@ -11,6 +11,7 @@ import Portfolio from "@/pages/Portfolio";
 import Contact from "@/pages/Contact";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 function Router() {
   return (
@@ -27,6 +28,7 @@ function Router() {
         </Switch>
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }

@@ -40,6 +40,7 @@ The application follows a monorepo structure with clear separation:
 - **Component Library**: Comprehensive UI components built on Radix primitives
 - **Contact Form**: Interactive form with validation and submission handling
 - **Global Presence**: Interactive display of company offices across 4 countries
+- **AI Chatbot**: Intelligent chatbot with predefined responses, quick action buttons, and smooth animations
 
 ### Backend Services
 - **Contact API**: RESTful endpoints for contact form submission and retrieval
