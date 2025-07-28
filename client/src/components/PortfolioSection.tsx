@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Healthcare AI Agent",
     description: "Intelligent patient management system that automates scheduling, medical record analysis, and treatment recommendations.",
-    image: "https://pixabay.com/get/gc5229cd134b0f373d65bb77a0226bc27632566fccb6a22a8efc68f25f73678c4763729581c96aaefa49f25d82e5d592b605b0594a7f2ad4fde1836894b3392c0_1280.jpg",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
     category: "AI Solutions",
     badge: "bg-brand-blue/10 text-brand-blue",
     linkColor: "text-brand-blue hover:text-brand-dark"
@@ -62,6 +62,21 @@ export default function PortfolioSection() {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    const title = project.title.replace(/[^a-zA-Z0-9\s]/g, '');
+                    target.src = "data:image/svg+xml;base64," + btoa(`
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+                        <rect width="800" height="500" fill="#f8fafc"/>
+                        <g transform="translate(400,250)">
+                          <circle cx="0" cy="-30" r="20" fill="#3b82f6" opacity="0.2"/>
+                          <rect x="-40" y="-10" width="80" height="40" rx="4" fill="#3b82f6" opacity="0.1"/>
+                          <text x="0" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#64748b">${title}</text>
+                        </g>
+                      </svg>
+                    `);
+                  }}
+                  loading="lazy"
                 />
                 <CardContent className="p-6">
                   <div className="flex items-center mb-2">
