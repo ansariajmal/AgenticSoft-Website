@@ -8,6 +8,14 @@ This repository contains a modern, full-stack web application for AgenticSoft, a
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+### Healthcare AI Agent Image Fix - July 28, 2025
+- Fixed Healthcare AI Agent image display issue on both home page and portfolio section
+- Updated image URLs from broken Pixabay links to verified Unsplash sources
+- Added robust error handling with SVG fallbacks for all portfolio images
+- Verified all image URLs return HTTP 200 status
+
 ## System Architecture
 
 ### Frontend Architecture
