@@ -7,14 +7,14 @@ const offices = [
     country: "Kuwait",
     description: "Middle East Headquarters",
     city: "Kuwait City, Kuwait",
-    phone: "+965 xxxx xxxx",
+    phone: "+965 65857091",
     gradient: "from-brand-blue to-brand-dark"
   },
   {
     country: "Turkey",
     description: "European Operations",
     city: "Istanbul, Turkey",
-    phone: "+90 xxxx xxxx",
+    phone: "+90 507-2454429",
     gradient: "from-brand-green to-emerald-600"
   },
   {
@@ -28,7 +28,7 @@ const offices = [
     country: "Pakistan",
     description: "Development Center",
     city: "Karachi, Pakistan",
-    phone: "+92 xxxx xxxx",
+    phone: "+92 300-2539855",
     gradient: "from-purple-600 to-violet-600"
   }
 ];

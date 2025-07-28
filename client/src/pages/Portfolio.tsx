@@ -14,7 +14,7 @@ const projects = [
     team: "8 specialists",
     impact: "40% efficiency increase",
     description: "Comprehensive AI-powered patient management system that automates scheduling, medical record analysis, and treatment recommendations. The platform uses advanced machine learning to predict patient needs and optimize healthcare delivery.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    image: "https://images.unsplash.com/photo-1666214280391-8ff5bce4c9b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80",
     technologies: ["Python", "TensorFlow", "NLP", "Cloud AI", "React"],
     results: [
       "Reduced patient wait times by 50%",
@@ -257,6 +257,11 @@ export default function Portfolio() {
                     src={project.image}
                     alt={project.title}
                     className="rounded-xl shadow-lg w-full h-auto"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://via.placeholder.com/800x500/e2e8f0/64748b?text=Healthcare+AI+Agent";
+                    }}
+                    loading="lazy"
                   />
                 </div>
               </motion.div>
@@ -295,6 +300,11 @@ export default function Portfolio() {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = `https://via.placeholder.com/800x500/e2e8f0/64748b?text=${encodeURIComponent(project.title)}`;
+                    }}
+                    loading="lazy"
                   />
                   <CardContent className="p-6">
                     <Badge className={project.badge}>{project.category}</Badge>
