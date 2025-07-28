@@ -14,7 +14,7 @@ const projects = [
     team: "8 specialists",
     impact: "40% efficiency increase",
     description: "Comprehensive AI-powered patient management system that automates scheduling, medical record analysis, and treatment recommendations. The platform uses advanced machine learning to predict patient needs and optimize healthcare delivery.",
-    image: "https://images.unsplash.com/photo-1666214280391-8ff5bce4c9b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
     technologies: ["Python", "TensorFlow", "NLP", "Cloud AI", "React"],
     results: [
       "Reduced patient wait times by 50%",
@@ -259,7 +259,17 @@ export default function Portfolio() {
                     className="rounded-xl shadow-lg w-full h-auto"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = "https://via.placeholder.com/800x500/e2e8f0/64748b?text=Healthcare+AI+Agent";
+                      target.src = "data:image/svg+xml;base64," + btoa(`
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+                          <rect width="800" height="500" fill="#f8fafc"/>
+                          <g transform="translate(400,250)">
+                            <circle cx="0" cy="-50" r="30" fill="#3b82f6" opacity="0.2"/>
+                            <rect x="-60" y="-20" width="120" height="80" rx="8" fill="#3b82f6" opacity="0.1"/>
+                            <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#64748b">Healthcare AI Agent</text>
+                            <text x="0" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8">Patient Management System</text>
+                          </g>
+                        </svg>
+                      `);
                     }}
                     loading="lazy"
                   />
@@ -302,7 +312,17 @@ export default function Portfolio() {
                     className="w-full h-48 object-cover"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = `https://via.placeholder.com/800x500/e2e8f0/64748b?text=${encodeURIComponent(project.title)}`;
+                      const title = project.title.replace(/[^a-zA-Z0-9\s]/g, '');
+                      target.src = "data:image/svg+xml;base64," + btoa(`
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+                          <rect width="800" height="500" fill="#f8fafc"/>
+                          <g transform="translate(400,250)">
+                            <circle cx="0" cy="-30" r="20" fill="#3b82f6" opacity="0.2"/>
+                            <rect x="-40" y="-10" width="80" height="40" rx="4" fill="#3b82f6" opacity="0.1"/>
+                            <text x="0" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#64748b">${title}</text>
+                          </g>
+                        </svg>
+                      `);
                     }}
                     loading="lazy"
                   />
