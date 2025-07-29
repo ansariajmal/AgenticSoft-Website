@@ -8,10 +8,11 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center mr-3">
-                <div className="w-4 h-4 bg-white rounded-sm"></div>
-              </div>
-              <span className="text-xl font-bold">AgenticSoft</span>
+              <img 
+                src="@assets/logo-text_1753766761665.png" 
+                alt="AGENTIC SOFT" 
+                className="h-8 w-auto filter brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 mb-4">
               Leading AI solutions provider delivering cutting-edge software development and process automation across the globe.

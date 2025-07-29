@@ -26,12 +26,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center mr-3">
-                <div className="w-4 h-4 bg-white rounded-sm"></div>
-              </div>
-              <span className="text-xl font-bold text-gray-900">AgenticSoft</span>
-            </div>
+            <img 
+              src="@assets/logo-text_1753766761665.png" 
+              alt="AGENTIC SOFT" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
