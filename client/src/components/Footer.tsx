@@ -9,11 +9,16 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <img 
-                src={logoImage} 
-                alt="AGENTIC SOFT" 
-                className="h-8 w-auto filter brightness-0 invert"
-              />
+              <div 
+                className="h-8 bg-white rounded px-2 py-1 flex items-center"
+                style={{ backgroundColor: 'white' }}
+              >
+                <img 
+                  src={logoImage} 
+                  alt="AGENTIC SOFT" 
+                  className="h-6 w-auto"
+                />
+              </div>
             </div>
             <p className="text-gray-400 mb-4">
               Leading AI solutions provider delivering cutting-edge software development and process automation across the globe.
