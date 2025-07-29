@@ -61,6 +61,12 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
+        brand: {
+          blue: "var(--brand-blue)",
+          dark: "var(--brand-dark)",
+          green: "var(--brand-green)",
+          amber: "var(--brand-amber)",
+        },
       },
       keyframes: {
         "accordion-down": {
