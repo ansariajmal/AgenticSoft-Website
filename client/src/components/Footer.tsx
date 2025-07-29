@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import logoImage from "@assets/logo-text_1753766761665.png";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               <img 
-                src="@assets/logo-text_1753766761665.png" 
+                src={logoImage} 
                 alt="AGENTIC SOFT" 
                 className="h-8 w-auto filter brightness-0 invert"
               />

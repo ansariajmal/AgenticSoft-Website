@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/logo-text_1753766761665.png";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -27,7 +28,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img 
-              src="@assets/logo-text_1753766761665.png" 
+              src={logoImage} 
               alt="AGENTIC SOFT" 
               className="h-8 w-auto"
             />
