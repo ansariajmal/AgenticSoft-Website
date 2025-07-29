@@ -8,29 +8,29 @@ const offices = [
     description: "Middle East Headquarters",
     city: "Kuwait City, Kuwait",
     phone: "+965 65857091",
-    gradient: "from-brand-blue to-brand-dark"
+    gradient: "from-brand-blue to-brand-dark",
   },
   {
     country: "Turkey",
     description: "European Operations",
     city: "Istanbul, Turkey",
     phone: "+90 507-2454429",
-    gradient: "from-brand-green to-emerald-600"
+    gradient: "from-brand-green to-emerald-600",
   },
   {
     country: "UAE",
     description: "Regional Hub",
     city: "Dubai, UAE",
-    phone: "+971 xxxx xxxx",
-    gradient: "from-brand-amber to-orange-500"
+    //phone: "+971 xxxx xxxx",
+    gradient: "from-brand-amber to-orange-500",
   },
   {
     country: "Pakistan",
     description: "Development Center",
     city: "Karachi, Pakistan",
     phone: "+92 300-2539855",
-    gradient: "from-purple-600 to-violet-600"
-  }
+    gradient: "from-purple-600 to-violet-600",
+  },
 ];
 
 export default function GlobalPresence() {
@@ -44,9 +44,12 @@ export default function GlobalPresence() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Global Presence</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Global Presence
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            With offices across four countries, we provide localized expertise while maintaining global standards of excellence.
+            With offices across four countries, we provide localized expertise
+            while maintaining global standards of excellence.
           </p>
         </motion.div>
 
@@ -61,11 +64,17 @@ export default function GlobalPresence() {
             >
               <Card className="text-center p-6 border border-gray-200 hover:shadow-lg transition-shadow h-full">
                 <CardContent className="p-0">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${office.gradient} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-br ${office.gradient} rounded-full flex items-center justify-center mx-auto mb-4`}
+                  >
                     <Building className="text-white w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{office.country}</h3>
-                  <p className="text-gray-600 text-sm mb-4">{office.description}</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {office.country}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {office.description}
+                  </p>
                   <div className="text-xs text-gray-500">
                     <p>{office.city}</p>
                     <p>{office.phone}</p>

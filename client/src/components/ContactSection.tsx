@@ -5,7 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
@@ -19,9 +25,9 @@ export default function ContactSection() {
     email: "",
     company: "",
     service: "",
-    message: ""
+    message: "",
   });
-  
+
   const { toast } = useToast();
 
   const contactMutation = useMutation({
@@ -39,7 +45,7 @@ export default function ContactSection() {
         email: "",
         company: "",
         service: "",
-        message: ""
+        message: "",
       });
     },
     onError: () => {
@@ -57,7 +63,7 @@ export default function ContactSection() {
   };
 
   const handleInputChange = (field: keyof InsertContact, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -70,9 +76,13 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Get In Touch
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your business with AI? Contact our team to discuss your project and discover how we can help you achieve your goals.
+            Ready to transform your business with AI? Contact our team to
+            discuss your project and discover how we can help you achieve your
+            goals.
           </p>
         </motion.div>
 
@@ -86,7 +96,9 @@ export default function ContactSection() {
           >
             <Card className="bg-white shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send us a message</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                  Send us a message
+                </h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
@@ -94,7 +106,9 @@ export default function ContactSection() {
                       <Input
                         id="firstName"
                         value={formData.firstName}
-                        onChange={(e) => handleInputChange("firstName", e.target.value)}
+                        onChange={(e) =>
+                          handleInputChange("firstName", e.target.value)
+                        }
                         placeholder="John"
                         required
                       />
@@ -104,7 +118,9 @@ export default function ContactSection() {
                       <Input
                         id="lastName"
                         value={formData.lastName}
-                        onChange={(e) => handleInputChange("lastName", e.target.value)}
+                        onChange={(e) =>
+                          handleInputChange("lastName", e.target.value)
+                        }
                         placeholder="Doe"
                         required
                       />
@@ -117,7 +133,9 @@ export default function ContactSection() {
                       id="email"
                       type="email"
                       value={formData.email}
-                      onChange={(e) => handleInputChange("email", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("email", e.target.value)
+                      }
                       placeholder="john@company.com"
                       required
                     />
@@ -128,27 +146,41 @@ export default function ContactSection() {
                     <Input
                       id="company"
                       value={formData.company || ""}
-                      onChange={(e) => handleInputChange("company", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("company", e.target.value)
+                      }
                       placeholder="Your Company"
                     />
                   </div>
 
                   <div>
                     <Label htmlFor="service">Service Interest</Label>
-                    <Select 
-                      value={formData.service} 
-                      onValueChange={(value) => handleInputChange("service", value)}
+                    <Select
+                      value={formData.service}
+                      onValueChange={(value) =>
+                        handleInputChange("service", value)
+                      }
                       required
                     >
                       <SelectTrigger>
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="ai-agentic">AI Agentic Solutions</SelectItem>
-                        <SelectItem value="custom-software">Custom Software Development</SelectItem>
-                        <SelectItem value="process-automation">Process Automation</SelectItem>
-                        <SelectItem value="website-design">Website Design</SelectItem>
-                        <SelectItem value="consultation">Consultation</SelectItem>
+                        <SelectItem value="ai-agentic">
+                          AI Agentic Solutions
+                        </SelectItem>
+                        <SelectItem value="custom-software">
+                          Custom Software Development
+                        </SelectItem>
+                        <SelectItem value="process-automation">
+                          Process Automation
+                        </SelectItem>
+                        <SelectItem value="website-design">
+                          Website Design
+                        </SelectItem>
+                        <SelectItem value="consultation">
+                          Consultation
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -159,14 +191,16 @@ export default function ContactSection() {
                       id="message"
                       rows={4}
                       value={formData.message}
-                      onChange={(e) => handleInputChange("message", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("message", e.target.value)
+                      }
                       placeholder="Tell us about your project..."
                       required
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     className="w-full bg-brand-blue hover:bg-brand-dark"
                     disabled={contactMutation.isPending}
                   >
@@ -186,14 +220,18 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                Contact Information
+              </h3>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
                     <MapPin className="text-white w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Headquarters</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Headquarters
+                    </h4>
                     <p className="text-gray-600">Kuwait City, Kuwait</p>
                   </div>
                 </div>
@@ -204,7 +242,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">+965 xxxx xxxx</p>
+                    <p className="text-gray-600">+965 65857091</p>
                   </div>
                 </div>
 
