@@ -1,37 +1,41 @@
 import { motion } from "framer-motion";
+import ajmalImage from "@assets/ajmal.jpg";
+import sadafImage from "@assets/sadaf-face.png";
+import nohaImage from "@assets/noha.png";
+import ahmdImage from "@assets/ahad_face.jpg";
 
 const teamMembers = [
   {
-    name: "Ahmed Al-Rashid",
+    name: "Muhammad Ajmal Ansari",
     role: "CEO & Co-Founder",
     location: "Kuwait Office",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
+    image: ajmalImage,
   },
   {
-    name: "Sarah Chen",
-    role: "AI Solutions Director",
+    name: "Sadaf Gul",
+    role: "AI Solutions Director & Co-Founder",
     location: "UAE Office",
-    image: "https://pixabay.com/get/g7284c38474a9a1bac9ffd0a2118cba07a796d2094eedda2064e02e3c6c460ee4534bc16a1b9c0b423f54f0d63400a77f8994c4023bf8033ad2e1fb6bf72ae1d7_1280.jpg"
+    image: sadafImage,
   },
   {
-    name: "Mehmet Özkan",
-    role: "Chief Technology Officer",
+    name: "Noha",
+    role: "Head of Sales Marketing",
     location: "Turkey Office",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
+    image: nohaImage,
   },
   {
-    name: "Fatima Khan",
+    name: "Ahad Ahmed",
     role: "Lead Developer",
     location: "Pakistan Office",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
-  }
+    image: ahmdImage,
+  },
 ];
 
 const stats = [
   { value: "50+", label: "Expert Developers" },
   { value: "15+", label: "AI Specialists" },
   { value: "100+", label: "Certifications" },
-  { value: "12+", label: "Languages Supported" }
+  { value: "12+", label: "Languages Supported" },
 ];
 
 export default function TeamSection() {
@@ -45,9 +49,12 @@ export default function TeamSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Expert Team</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Our Expert Team
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet the talented professionals who bring innovative AI solutions and cutting-edge software development to life.
+            Meet the talented professionals who bring innovative AI solutions
+            and cutting-edge software development to life.
           </p>
         </motion.div>
 
@@ -66,8 +73,12 @@ export default function TeamSection() {
                 alt={member.name}
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">{member.name}</h3>
-              <p className="text-brand-blue text-sm font-medium mb-2">{member.role}</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                {member.name}
+              </h3>
+              <p className="text-brand-blue text-sm font-medium mb-2">
+                {member.role}
+              </p>
               <p className="text-gray-600 text-xs">{member.location}</p>
             </motion.div>
           ))}
@@ -90,7 +101,9 @@ export default function TeamSection() {
                 transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="text-3xl font-bold text-brand-blue mb-2">{stat.value}</div>
+                <div className="text-3xl font-bold text-brand-blue mb-2">
+                  {stat.value}
+                </div>
                 <div className="text-gray-600">{stat.label}</div>
               </motion.div>
             ))}
