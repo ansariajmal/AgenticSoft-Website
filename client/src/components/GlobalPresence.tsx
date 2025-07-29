@@ -2,22 +2,6 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building } from "lucide-react";
 
-// Country flag emojis for better display
-const CountryFlag = ({ country }: { country: string }) => {
-  const flags = {
-    "Kuwait": "🇰🇼",
-    "Turkey": "🇹🇷", 
-    "UAE": "🇦🇪",
-    "Pakistan": "🇵🇰"
-  };
-  
-  return (
-    <span className="text-2xl" role="img" aria-label={`${country} flag`}>
-      {flags[country as keyof typeof flags] || "🏢"}
-    </span>
-  );
-};
-
 const offices = [
   {
     country: "Kuwait",
@@ -78,7 +62,7 @@ export default function GlobalPresence() {
               <Card className="text-center p-6 border border-gray-200 hover:shadow-lg transition-shadow h-full">
                 <CardContent className="p-0">
                   <div className={`w-16 h-16 bg-gradient-to-br ${office.gradient} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                    <CountryFlag country={office.country} />
+                    <Building className="text-white w-6 h-6" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{office.country}</h3>
                   <p className="text-gray-600 text-sm mb-4">{office.description}</p>
