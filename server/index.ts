@@ -50,9 +50,17 @@ app.use((req, res, next) => {
   // importantly only setup vite in development and after
   // setting up all the other routes so the catch-all route
   // doesn't interfere with the other routes
+
+
+  //app.set("env", "production"); 
+    
+  log("app.get(env):" + app.get("env") + " ok");
+
   if (app.get("env") === "development") {
+    log("setting up vite in development mode");
     await setupVite(app, server);
   } else {
+    log("serving static files in production mode");
     serveStatic(app);
   }
 
@@ -63,8 +71,8 @@ app.use((req, res, next) => {
   const port = parseInt(process.env.PORT || '5000', 10);
   server.listen({
     port,
-    host: "0.0.0.0",
-    reusePort: true,
+    host: "localhost",
+    reusePort: false,
   }, () => {
     log(`serving on port ${port}`);
   });
