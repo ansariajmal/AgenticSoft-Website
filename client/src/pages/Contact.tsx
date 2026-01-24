@@ -14,7 +14,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone Numbers",
-    details: ["+965 xxxx xxxx (Kuwait)", "+971 xxxx xxxx (UAE)"],
+    details: ["+965 65857091 (Kuwait)", "+90 507-2454429 (Turkey)"],
     color: "bg-brand-green"
   },
   {
@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Business Hours",
-    details: ["Mon-Fri: 9:00 AM - 6:00 PM", "Sat: 10:00 AM - 2:00 PM"],
+    details: ["Sun-Thursday: 8:00 AM - 5:00 PM", "Sat: 10:00 AM - 2:00 PM"],
     color: "bg-purple-600"
   }
 ];
@@ -36,7 +36,7 @@ const offices = [
     country: "Kuwait",
     city: "Kuwait City",
     address: "Business District, Floor 15, Block 4",
-    phone: "+965 xxxx xxxx",
+    phone: "+965 65857091",
     email: "kuwait@agenticsoft.com",
     manager: "Ahmed Al-Rashid",
     specialties: ["AI Solutions", "Business Consulting"]
@@ -45,7 +45,7 @@ const offices = [
     country: "UAE",
     city: "Dubai",
     address: "Dubai Internet City, Building 3",
-    phone: "+971 xxxx xxxx",
+ //   phone: "+971 xxxx xxxx",
     email: "dubai@agenticsoft.com",
     manager: "Sarah Chen",
     specialties: ["Custom Software", "Enterprise Solutions"]
@@ -54,7 +54,7 @@ const offices = [
     country: "Turkey",
     city: "Istanbul",
     address: "Levent Business Center, Floor 8",
-    phone: "+90 xxxx xxxx",
+    phone: "+90 507-2454429",
     email: "istanbul@agenticsoft.com",
     manager: "Mehmet Özkan",
     specialties: ["Process Automation", "IoT Solutions"]
@@ -63,7 +63,7 @@ const offices = [
     country: "Pakistan",
     city: "Karachi",
     address: "Clifton Block 4, Technology Hub",
-    phone: "+92 xxxx xxxx",
+    phone: "+92 300-2539855",
     email: "karachi@agenticsoft.com",
     manager: "Fatima Khan",
     specialties: ["Web Development", "Mobile Apps"]

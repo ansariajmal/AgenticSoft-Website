@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import ajmalImage from "@assets/ajmal.jpg";
-import sadafImage from "@assets/sadaf-face.png";
-import nohaImage from "@assets/noha.png";
-import ahmdImage from "@assets/ahad_face.jpg";
+import ajmalImage from "@assets/ansari.png";
+import sadafImage from "@assets/sadaf.jpg";
+import nohaImage from "@assets/noha.jpg";
+import ahmdImage from "@assets/ahad.png";
 
 const teamMembers = [
   {
-    name: "Muhammad Ajmal Ansari",
+    name: "M A Ansari",
     role: "CEO & Co-Founder",
     location: "Kuwait Office",
     image: ajmalImage,

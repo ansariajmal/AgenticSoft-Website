@@ -4,6 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Brain, Code, Cog, Palette, ArrowRight, Check } from "lucide-react";
 import { Link } from "wouter";
+//import agenticSolutions from "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600";
+//import customDevelopment from "@assets/process-automation.jpeg";
+import processAutomationImg from "@assets/process-automation.jpeg";
+import websiteDesign  from "@assets/Web-Design-and-Development.jpg";
+
 
 const services = [
   {
@@ -25,7 +30,8 @@ const services = [
     ],
     color: "blue",
     gradient: "from-blue-50 to-indigo-50",
-    iconBg: "bg-brand-blue"
+    iconBg: "bg-brand-blue",
+    image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
   },
   {
     icon: Code,
@@ -46,7 +52,8 @@ const services = [
     ],
     color: "green",
     gradient: "from-green-50 to-emerald-50",
-    iconBg: "bg-brand-green"
+    iconBg: "bg-brand-green",
+    image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
   },
   {
     icon: Cog,
@@ -67,7 +74,8 @@ const services = [
     ],
     color: "amber",
     gradient: "from-amber-50 to-yellow-50",
-    iconBg: "bg-brand-amber"
+    iconBg: "bg-brand-amber",
+    image: processAutomationImg
   },
   {
     icon: Palette,
@@ -88,7 +96,8 @@ const services = [
     ],
     color: "purple",
     gradient: "from-purple-50 to-violet-50",
-    iconBg: "bg-purple-600"
+    iconBg: "bg-purple-600",
+    image: websiteDesign
   }
 ];
 
@@ -179,13 +188,7 @@ export default function Services() {
                   </div>
 
                   <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
-                    <img
-                      src={`https://images.unsplash.com/photo-${
-                        index === 0 ? "1555255707-c07966088b7b" :
-                        index === 1 ? "1517077304055-6e89abbf09b0" :
-                        index === 2 ? "1518186285589-2b7929ec2422" :
-                        "1467232004584-a241ec9a6c58"
-                      }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600`}
+                    <img  src={service.image}                      
                       alt={service.title}
                       className="rounded-xl shadow-lg w-full h-auto"
                     />

@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, ExternalLink, Calendar, Users, TrendingUp } from "lucide-react";
 import { Link } from "wouter";
+import redesignSiteImg from "@assets/redesign_site.jpg";
+import smartIoTImg  from "@assets/smart-IoT-factory.jpg";
 
 const projects = [
   {
@@ -71,7 +73,7 @@ const projects = [
     team: "7 specialists",
     impact: "45% productivity boost",
     description: "IoT-enabled manufacturing automation system with predictive maintenance, quality control, and real-time monitoring capabilities.",
-    image: "https://images.unsplash.com/photo-1518186285589-2b7929ec2422?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    image: smartIoTImg,
     technologies: ["IoT", "Machine Learning", "Python", "InfluxDB", "Grafana"],
     results: [
       "Reduced downtime by 60%",
@@ -90,7 +92,7 @@ const projects = [
     team: "4 designers",
     impact: "150% traffic increase",
     description: "Complete website redesign with modern UI/UX, performance optimization, and integrated CMS for content management.",
-    image: "https://images.unsplash.com/photo-1467232004584-a241ec9a6c58?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    image: redesignSiteImg,
     technologies: ["React", "Next.js", "Tailwind", "Strapi", "Vercel"],
     results: [
       "Page load speed improved by 70%",
