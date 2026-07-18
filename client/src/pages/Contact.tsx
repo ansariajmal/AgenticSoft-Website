@@ -7,7 +7,7 @@ import ContactSection from "@/components/ContactSection";
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Headquarters",
+    title: "Kuwait Office",
     details: ["Kuwait City, Kuwait", "Business District, Floor 15"],
     color: "bg-brand-blue"
   },

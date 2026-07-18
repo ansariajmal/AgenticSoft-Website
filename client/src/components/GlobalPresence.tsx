@@ -5,14 +5,14 @@ import { Building } from "lucide-react";
 const offices = [
   {
     country: "Kuwait",
-    description: "Middle East Headquarters",
+    description: "Middle East Operations ",
     city: "Kuwait City, Kuwait",
     phone: "+965 65857091",
     gradient: "from-brand-blue to-brand-dark",
   },
   {
     country: "Turkey",
-    description: "European Operations",
+    description: "Headquarters",
     city: "Istanbul, Turkey",
     phone: "+90 507-2454429",
     gradient: "from-brand-green to-emerald-600",

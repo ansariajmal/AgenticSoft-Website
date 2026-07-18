@@ -230,7 +230,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                      Headquarters
+                      Kuwait Office
                     </h4>
                     <p className="text-gray-600">Kuwait City, Kuwait</p>
                   </div>
