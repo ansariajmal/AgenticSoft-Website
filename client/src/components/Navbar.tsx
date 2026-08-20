@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
-import logoImage from "@assets/logo-text_1753766761665.png";
+import logoImage from "@assets/logo-text-blue.png";
 
 export default function Navbar() {
   const [location] = useLocation();
