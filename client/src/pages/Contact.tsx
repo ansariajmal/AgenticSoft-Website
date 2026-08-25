@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Addresses",
-    details: ["info@agenticsoft.com", "sales@agenticsoft.com"],
+    details: ["info@theagenticsoft.com", "sales@theagenticsoft.com"],
     color: "bg-brand-amber"
   },
   {
@@ -37,7 +37,7 @@ const offices = [
     city: "Kuwait City",
     address: "Business District, Floor 15, Block 4",
     phone: "+965 65857091",
-    email: "kuwait@agenticsoft.com",
+    email: "kuwait@theagenticsoft.com",
     manager: "Ahmed Al-Rashid",
     specialties: ["AI Solutions", "Business Consulting"]
   },
@@ -46,7 +46,7 @@ const offices = [
     city: "Dubai",
     address: "Dubai Internet City, Building 3",
  //   phone: "+971 xxxx xxxx",
-    email: "dubai@agenticsoft.com",
+    email: "dubai@theagenticsoft.com",
     manager: "Sarah Chen",
     specialties: ["Custom Software", "Enterprise Solutions"]
   },
@@ -55,7 +55,7 @@ const offices = [
     city: "Istanbul",
     address: "Levent Business Center, Floor 8",
     phone: "+90 507-2454429",
-    email: "istanbul@agenticsoft.com",
+    email: "istanbul@theagenticsoft.com",
     manager: "Mehmet Özkan",
     specialties: ["Process Automation", "IoT Solutions"]
   },
@@ -64,7 +64,7 @@ const offices = [
     city: "Karachi",
     address: "Clifton Block 4, Technology Hub",
     phone: "+92 300-2539855",
-    email: "karachi@agenticsoft.com",
+    email: "karachi@theagenticsoft.com",
     manager: "Fatima Khan",
     specialties: ["Web Development", "Mobile Apps"]
   }

@@ -37,7 +37,7 @@ const predefinedResponses = {
   ],
   contact: [
     "You can reach us through multiple channels! Use our Contact page, call our offices in Kuwait (+965 xxxx xxxx), UAE (+971 xxxx xxxx), Turkey (+90 xxxx xxxx), or Pakistan (+92 xxxx xxxx).",
-    "We have offices in Kuwait, Turkey, UAE, and Pakistan. Visit our Contact page for detailed office information and our contact form, or email us at info@agenticsoft.com."
+    "We have offices in Kuwait, Turkey, UAE, and Pakistan. Visit our Contact page for detailed office information and our contact form, or email us at info@theagenticsoft.com."
   ],
   pricing: [
     "Pricing varies based on project scope and requirements. I'd recommend visiting our Contact page to schedule a free consultation where our experts can provide a detailed quote tailored to your needs.",
